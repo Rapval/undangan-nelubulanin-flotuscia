@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Undangan Nelubulanin</title>
+  <meta name="description" content="Undangan Nelubulanin — 24 Nov 2025" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================== INTRO / AMPLOP ================== -->
+<div id="envelope-screen">
+  <div class="envelope-card">
+    <img src="assets/envelope-closed.png" alt="" class="envelope-img"/>
+    <button id="openBtn" class="primary">Buka Undangan 💌</button>
+    <p class="hint">Klik tombol untuk membuka undangan</p>
+  </div>
+</div>
+
+<!-- ================== MAIN CONTENT ================== -->
+<main id="main" class="hidden">
+
+  <header class="hero container">
+    <h1 class="title">Upacara Nelubulanin</h1>
+    <h1 class="title">Tigang Sasih</h1>
+
+    <!-- Nama tamu otomatis -->
+    <p id="forGuest" class="guest"></p>
+
+    <!-- Countdown -->
+    <div id="countdown" class="countdown"></div>
+  </header>
+
+  <!-- VIDEO -->
+  <section class="section container">
+    <h1 class="sub-title">Ni Made Flotuscia Natalie Widiandari</h1>
+    <div class="media-wrap reveal">
+      <video id="openingVideo" playsinline muted preload="auto" class="media">
+        <source src="assets/video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="section container">
+    <h2 class="gold">Galeri</h2>
+    <div class="gallery">
+      <img class="gallery-item reveal" src="assets/foto1.jpg">
+      <img class="gallery-item reveal" src="assets/foto2.jpg">
+      <img class="gallery-item reveal" src="assets/foto3.jpg">
+    </div>
+  </section>
+
+  <!-- INFO ACARA -->
+  <section class="section container elegant-box">
+    <h2 class="gold">Informasi Acara</h2>
+    <p><strong>Tanggal:</strong> 24 November 2025</p>
+    <p><strong>Waktu:</strong> 10:00 WITA</p>
+
+    <h3 class="gold">🎁 Kirim Hadiah Digital</h3>
+    <p><h2 class="blue">💳 BCA : 8271126166 a/n Ni Made Widiariasih</h2></p>
+
+    <div class="location-card">
+      <h3 class="gold">Lokasi Acara</h3>
+      <a class="map-button"
+         href="https://maps.app.goo.gl/yCETwBeLt5TtPc7TA" 
+         target="_blank" rel="noopener">
+        📍 Buka Lokasi Acara
+      </a>
+    </div>
+  </section>
+
+  <!-- KOMENTAR -->
+  <section class="section container comment-box">
+    <h2 class="gold">Ucapkan Sesuatu ✨</h2>
+
+    <textarea id="commentInput" placeholder="Tulis pesan untuk keluarga ..."></textarea>
+    <button id="sendComment">Kirim</button>
+
+    <div id="commentList" class="comment-list"></div>
+  </section>
+
+</main>
+
+<!-- AUDIO -->
+<audio id="bgAudio" src="assets/musik.mp3" loop></audio>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+</body>
+</html>
